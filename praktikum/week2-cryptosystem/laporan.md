@@ -73,6 +73,9 @@ Dalam praktiknya, kedua jenis sistem ini sering dikombinasikan untuk memanfaatka
 ## 6. Hasil dan Pembahasan
 Kriptosistem merupakan fondasi penting dalam menjaga keamanan komunikasi dengan menggunakan proses enkripsi dan dekripsi yang melibatkan plaintext, ciphertext, algoritma, dan kunci. Sistem kriptografi simetris menawarkan kecepatan dan efisiensi, tetapi menghadapi tantangan besar dalam distribusi kunci yang aman. Sementara itu, kriptografi asimetris lebih aman dalam pertukaran kunci karena menggunakan pasangan kunci publik dan privat, meskipun lebih lambat dan kompleks. Oleh karena itu, kombinasi kedua metode ini sering digunakan dalam praktik untuk memanfaatkan kelebihan masing-masing, sehingga komunikasi data dapat terlindungi secara optimal.
 
+![Hasil Eksekusi](Screenshot/eksekusi.png)
+![Hasil Input](Screenshot/input.png)
+![Hasil Output](Screenshot/output.png)
 ---
 
 ## 7. Jawaban Pertanyaan
