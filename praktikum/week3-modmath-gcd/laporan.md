@@ -1,9 +1,9 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 3
+Topik: 
+Nama: Faiz Al Mubarok
+NIM: 230202748 
+Kelas: 5IKRB
 
 ---
 
@@ -119,3 +119,4 @@ Author: Faiz Al Mubarok <huahuh3@gmail.com>
 Date:   2025-10-21
 
     week3-modular_math: implementasi Aritmetika Modular, GCD, Bilangan Prima, Logaritma Diskri
+
