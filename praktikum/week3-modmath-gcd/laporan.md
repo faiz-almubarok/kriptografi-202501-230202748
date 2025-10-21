@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 3
-Topik: 
+Topik: Aritmetika Modular, GCD, Bilangan Prima, Logaritma Diskrit
 Nama: Faiz Al Mubarok
 NIM: 230202748 
 Kelas: 5IKRB
@@ -119,4 +119,5 @@ Author: Faiz Al Mubarok <huahuh3@gmail.com>
 Date:   2025-10-21
 
     week3-modular_math: implementasi Aritmetika Modular, GCD, Bilangan Prima, Logaritma Diskri
+
 
