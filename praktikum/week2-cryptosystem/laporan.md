@@ -19,6 +19,7 @@ Cryptosystem atau sistem kriptografi adalah seperangkat metode atau algoritma ya
 Enkripsi merupakan proses mengubah data asli (plaintext) menjadi bentuk yang tidak dapat dibaca (ciphertext) tanpa kunci tertentu, sedangkan dekripsi adalah proses mengembalikan ciphertext menjadi bentuk aslinya. Keamanan sistem ini bergantung pada algoritma yang digunakan dan seberapa baik kunci rahasia dijaga. Dalam implementasinya, kriptosistem dibagi menjadi dua jenis utama: kriptografi simetris dan asimetris.
 Kriptografi simetris menggunakan satu kunci yang sama untuk proses enkripsi dan dekripsi. Sistem ini lebih cepat dan efisien, sehingga sering digunakan untuk mengamankan data dalam jumlah besar. Namun, kelemahannya terletak pada distribusi kunci — jika kunci jatuh ke tangan yang salah, seluruh sistem bisa terancam. Sebaliknya, kriptografi asimetris menggunakan dua kunci berbeda: kunci publik untuk enkripsi dan kunci privat untuk dekripsi. Sistem ini lebih aman dalam hal distribusi kunci, namun memerlukan lebih banyak sumber daya dan waktu karena prosesnya lebih kompleks.
 Dalam praktiknya, kedua jenis sistem ini sering dikombinasikan untuk memanfaatkan kelebihan masing-masing. Sistem asimetris biasanya digunakan untuk pertukaran kunci secara aman, sementara sistem simetris digunakan untuk mengenkripsi isi data secara efisien. Pendekatan hibrida ini umum digunakan dalam berbagai protokol keamanan seperti SSL/TLS pada komunikasi internet.
+
 ---
 
 ## 3. Alat dan Bahan
@@ -38,6 +39,7 @@ Dalam praktiknya, kedua jenis sistem ini sering dikombinasikan untuk memanfaatka
 ---
 
 ## 5. Source Code
+```python
     def encrypt(plaintext, key):
     result = ""
     for char in plaintext:
@@ -68,6 +70,7 @@ Dalam praktiknya, kedua jenis sistem ini sering dikombinasikan untuk memanfaatka
     print("Plaintext :", message)
     print("Ciphertext:", enc)
     print("Decrypted :", dec)
+```
 
 ---
 ## 6. Hasil dan Pembahasan
@@ -92,6 +95,12 @@ Kriptosistem merupakan fondasi penting dalam menjaga keamanan komunikasi dengan 
 ---
 
 ## 9. Daftar Pustaka
-
+-
 ---
 
+## 10. Commit Log
+commit abc12345
+Author: Faiz Al Mubarok <huahuh3@gmail.com>
+Date:   2025-10-21
+
+    week2-cryptosystem
