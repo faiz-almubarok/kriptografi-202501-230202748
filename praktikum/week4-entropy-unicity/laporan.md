@@ -89,15 +89,14 @@ Hasil eksekusi program Caesar Cipher:
 
 ---
 
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
+## 7. Jawaban Pertanyaan  
 - Pertanyaan 1: Apa arti dari nilai entropy dalam konteks kekuatan kunci?
   Jawab: Entropy menunjukkan seberapa acak atau tidak terduganya kunci. Semakin besar nilai entropy, semakin sulit kunci ditebak, sehingga sistem lebih aman.
 - Pertanyaan 2: Mengapa unicity distance penting dalam menentukan keamanan suatu cipher?
   Jawab: Karena unicity distance menggambarkan jumlah ciphertext yang diperlukan agar kunci dapat diidentifikasi secara unik. Jika nilai ini kecil, cipher mudah diserang karena sedikit ciphertext sudah cukup untuk menentukan kunci.
 - Pertanyaan 3: Mengapa brute force masih menjadi ancaman meskipun algoritma sudah kuat?
   Jawab: Karena brute force tetap relevan bila implementasi lemah, kunci terlalu pendek, atau sistem menggunakan kata sandi yang mudah ditebak. Perkembangan teknologi juga terus meningkatkan kemampuan komputasi, membuat brute force semakin cepat.
-)
+
 ---
 
 ## 8. Kesimpulan
