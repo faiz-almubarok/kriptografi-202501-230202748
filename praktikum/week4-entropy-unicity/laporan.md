@@ -117,9 +117,9 @@ Dari percobaan, dapat disimpulkan bahwa nilai entropi dan unicity distance berba
 
 ## 10. Commit Log
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit 653f3157379d1516e4a66a9abe40270bc8c0dec0 (HEAD -> main, origin/main, origin/HEAD)
+Author: faiz-almubarok <huahuh3@gmail.com>
+Date:   Mon Nov 3 18:39:07 2025 +0700
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week4-entropy-unicity
 ```
