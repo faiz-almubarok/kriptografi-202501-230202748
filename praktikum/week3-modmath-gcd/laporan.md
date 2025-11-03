@@ -32,14 +32,14 @@ Git dan akun GitHub
 ## 4. Langkah Percobaan
 1.Membuat file baru bernama modular_crypto.py di dalam folder: praktikum/week3-modular_math.md/src/
 2.Menyalin kode program dari panduan praktikum.
-3.Menjalankan program dengan perintah python modular_crypto.py.)
-
+3.Menjalankan program dengan perintah python modular_crypto.py.
 
 ---
 
 ## 5. Source Code
 
-```def mod_add(a, b, n): return (a + b) % n
+```python
+def mod_add(a, b, n): return (a + b) % n
 def mod_sub(a, b, n): return (a - b) % n
 def mod_mul(a, b, n): return (a * b) % n
 def mod_exp(base, exp, n): return pow(base, exp, n)  # eksponensiasi modular
