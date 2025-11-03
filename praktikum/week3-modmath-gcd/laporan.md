@@ -17,6 +17,7 @@ Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
 
 ## 2. Dasar Teori
 Modular arithmetic adalah sistem perhitungan yang bekerja berdasarkan sisa hasil bagi suatu bilangan terhadap bilangan modulus tertentu. Dua bilangan dikatakan kongruen jika memiliki sisa pembagian yang sama terhadap modulus yang digunakan, ditulis sebagai 𝑎≡𝑏 (mod 𝑛) a≡b (modn). Konsep ini banyak digunakan dalam kriptografi karena memungkinkan operasi pada bilangan besar tetap efisien dan aman, serta menjadi dasar dari algoritma seperti RSA dan Diffie-Hellman. Greatest Common Divisor (GCD) atau Faktor Persekutuan Terbesar adalah bilangan terbesar yang dapat membagi dua bilangan tanpa sisa. Perhitungannya umumnya dilakukan dengan Algoritma Euclidean yang cepat dan sederhana. Dalam kriptografi, GCD digunakan untuk memastikan dua bilangan bersifat relatif prima, sehingga memungkinkan perhitungan invers modular yang penting dalam pembentukan kunci publik dan privat pada sistem seperti RSA.
+
 ---
 
 ## 3. Alat dan Bahan
@@ -25,6 +26,7 @@ Modular arithmetic adalah sistem perhitungan yang bekerja berdasarkan sisa hasil
 Visual Studio Code / editor lain
 Git dan akun GitHub
 )
+
 ---
 
 ## 4. Langkah Percobaan
@@ -97,6 +99,7 @@ Hasil eksekusi program Caesar Cipher:
 1.Peran aritmetika modular dalam kriptografi modern: Aritmetika modular berperan sebagai dasar utama dalam kriptografi modern karena digunakan untuk melakukan semua perhitungan enkripsi dan dekripsi pada bilangan yang sangat besar agar tetap berada dalam batas tertentu. Selain itu, aritmetika modular menciptakan fungsi satu arah yang mudah dihitung namun sulit dibalik, sehingga memberikan keamanan pada algoritma kriptografi seperti RSA, Diffie-Hellman, dan Elliptic Curve Cryptography (ECC).
 2.Pentingnya invers modular dalam algoritma kunci publik (misalnya RSA): Invers modular sangat penting dalam algoritma kunci publik seperti RSA karena digunakan untuk menghitung kunci privat dari kunci publik. Dalam RSA, nilai d sebagai kunci privat diperoleh dari invers modular antara e (kunci publik) dan φ(n). Tanpa invers modular, proses dekripsi tidak dapat dilakukan karena tidak ada hubungan matematis yang mengembalikan pesan terenkripsi ke bentuk aslinya.
 3.Tantangan utama dalam menyelesaikan logaritma diskrit untuk modulus besar: Tantangan utama dalam menyelesaikan logaritma diskrit untuk modulus besar adalah karena tidak adanya algoritma yang efisien untuk menghitungnya. Proses ini sangat sulit dan memerlukan waktu komputasi yang sangat lama ketika modulus berukuran besar. Kesulitan inilah yang menjadi dasar keamanan algoritma kriptografi seperti Diffie-Hellman dan DSA, karena membuat nilai eksponen pada operasi modular hampir mustahil ditemukan tanpa kunci yang benar.
+
 ---
 
 ## 8. Kesimpulan
@@ -119,5 +122,3 @@ Author: Faiz Al Mubarok <huahuh3@gmail.com>
 Date:   2025-10-21
 
     week3-modular_math: implementasi Aritmetika Modular, GCD, Bilangan Prima, Logaritma Diskri
-
-

@@ -54,7 +54,6 @@ Berikut adalah bukti screenshot:
 ![Repo Setup](/praktikum/week1-intro-cia/screenshots/repo_setup.png)
 ![Initial Commit](/praktikum/week1-intro-cia/screenshots/initial_commit.png)
 
-
 ---
 
 ## 7. Jawaban Pertanyaan
@@ -73,7 +72,13 @@ Praktikum minggu pertama berhasil diselesaikan dengan penyiapan repositori GitHu
 ---
 
 ## 9. Daftar Pustaka
+-
 
 ---
 
+## 10. Commit Log
+commit abc12345
+Author: Faiz Al Mubarok <huahuh3@gmail.com>
+Date:   2025-10-21
 
+    week1-intro cia
