@@ -57,9 +57,6 @@ from Crypto.PublicKey import RSA
 from Crypto.Signature import pkcs1_15
 from Crypto.Hash import SHA256
 
-# ================================
-# 1. Generate pasangan kunci RSA
-# ================================
 print("=== GENERATE KEY RSA ===")
 key = RSA.generate(2048)
 private_key = key
@@ -69,9 +66,6 @@ print("Private Key Length :", len(private_key.export_key()))
 print("Public Key Length  :", len(public_key.export_key()))
 print()
 
-# =================================
-# 2. Buat tanda tangan digital (SIGN)
-# =================================
 message = b"Hello, ini pesan penting."
 h = SHA256.new(message)
 
@@ -84,9 +78,6 @@ print("Signature (hex):")
 print(signature.hex())
 print()
 
-# ================================
-# 3. Verifikasi pesan asli
-# ================================
 print("=== VERIFIKASI PESAN ASLI ===")
 try:
     pkcs1_15.new(public_key).verify(h, signature)
@@ -95,9 +86,6 @@ except (ValueError, TypeError):
     print("Verifikasi gagal: tanda tangan TIDAK VALID.")
 print()
 
-# ========================================
-# 4. Verifikasi pesan setelah dimodifikasi
-# ========================================
 fake_message = b"Hello, ini pesan palsu."
 h_fake = SHA256.new(fake_message)
 
@@ -113,12 +101,11 @@ except (ValueError, TypeError):
 print()
 
 print("=== SELESAI ===")
-
+```
+---
 
 ## 6. Hasil dan Pembahasan
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
+![Hasil Eksekusi](screenshot/hasil.png)
 )
 
 ---
@@ -141,7 +128,7 @@ Selain itu, hanya pemilik private key yang dapat membuat tanda tangan tersebut, 
 
 Certificate Authority (CA) berperan sebagai lembaga terpercaya yang menerbitkan dan memverifikasi sertifikat digital yang berisi public key seseorang atau organisasi.
 Dengan CA, pengguna lain dapat yakin bahwa public key tersebut benar-benar milik pihak yang sah, sehingga mencegah serangan man-in-the-middle dan pemalsuan identitas.
----
+
 
 ## 8. Kesimpulan
 Dari percobaan ini dapat disimpulkan bahwa tanda tangan digital menggunakan RSA dapat menjamin integritas dan otentikasi pesan. Percobaan menunjukkan bahwa tanda tangan valid hanya untuk pesan asli, sementara pesan yang dimodifikasi menghasilkan verifikasi gagal. Hal ini membuktikan efektivitas mekanisme digital signature sebagai bagian penting dari sistem keamanan informasi modern.
@@ -161,3 +148,10 @@ Date:   2025-12-8
 
     week9-digital-signature: implementasi RSA digital signature dan laporan
 ```
+
+
+
+
+
+
+
