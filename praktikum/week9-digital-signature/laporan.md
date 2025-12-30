@@ -143,7 +143,7 @@ Dari percobaan ini dapat disimpulkan bahwa tanda tangan digital menggunakan RSA 
 ## 10. Commit Log
 ```
 week9-digital-signature
-Author: Nafis Ramadhan Khoeru Jati <nafisramadhankhoerujati@gmail.com>
+Author: faiz-almubarok <huahuh3@gmail.com>
 Date:   2025-12-8
 
     week9-digital-signature: implementasi RSA digital signature dan laporan
