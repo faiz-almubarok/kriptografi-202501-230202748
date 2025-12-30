@@ -2,7 +2,7 @@
 Minggu ke-: 11
 Topik: Shamir’s Secret Sharing  
 Nama: Faiz Al Mubarok  
-NIM: [NIM Mahasiswa]  
+NIM: 230202748  
 Kelas: 5IKRB
 
 ---
