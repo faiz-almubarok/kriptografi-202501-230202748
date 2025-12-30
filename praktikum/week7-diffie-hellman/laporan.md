@@ -65,7 +65,7 @@ Percobaan Diffie–Hellman dengan parameter kecil (p = 23) dan (g = 5) menunjukk
 
 Hasil eksekusi program Diffie Hellman:
 
-![Hasil Eksekusi](screenshot/hasil.png)
+![Hasil Eksekusi](screenshots/hasil.png)
 
 ---
 
