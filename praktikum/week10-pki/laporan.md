@@ -112,7 +112,7 @@ Berdasarkan praktikum yang dilakukan, dapat disimpulkan bahwa PKI memiliki peran
 ## 10. Commit Log
 ```
 week10-pki
-Author: Nafis Ramadhan Khoeru Jati <nafisramadhankhoerujati@gmail.com>
+Author: faiz-almubarok <huahuh3@gmail.com>
 Date:   2025-12-15
 
     week10-pki dan laporan
