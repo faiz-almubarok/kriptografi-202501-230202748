@@ -121,7 +121,7 @@ Secara keseluruhan, algoritma modern adalah kumpulan langkah logis yang dirancan
 ## 10. Commit Log
 ```
 commit week6-cipher-modern
-Author: Nafis Ramadhan Khoeru Jati <nafisramadhankhoerujati@gmail.com>
+Author: faiz-almubarok <huahuh3@gmail.com>
 Date:   2025-11-9
 
     week6-cipher-modern (DES, AES, RSA)
