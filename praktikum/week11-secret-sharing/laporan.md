@@ -1,65 +1,68 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
+Minggu ke-: 11
+Topik: Shamir’s Secret Sharing  
+Nama: Faiz Al Mubarok  
 NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Kelas: 5IKRB
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+( Tujuan dari praktikum ini adalah untuk memahami konsep Shamir’s Secret Sharing (SSS), mengimplementasikan pembagian rahasia ke beberapa bagian (shares), serta merekonstruksi kembali rahasia tersebut menggunakan jumlah share minimum sesuai nilai threshold. )
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+( Shamir’s Secret Sharing (SSS) adalah skema kriptografi yang digunakan untuk membagi sebuah rahasia menjadi beberapa bagian (shares), di mana rahasia asli hanya dapat direkonstruksi jika minimal sejumlah share tertentu (threshold k) digabungkan. Skema ini diperkenalkan oleh Adi Shamir pada tahun 1979.
 
+Prinsip dasar SSS menggunakan polinomial berderajat (k−1) dalam aritmetika modular. Nilai rahasia disimpan sebagai konstanta polinomial, sedangkan share merupakan pasangan nilai (x, f(x)). Dengan menggunakan interpolasi Lagrange, rahasia dapat direkonstruksi kembali jika tersedia minimal k buah share yang valid.
+
+Keamanan Shamir’s Secret Sharing terletak pada fakta bahwa kurang dari k share tidak memberikan informasi apa pun tentang rahasia. Hal ini menjadikan SSS sangat aman untuk manajemen kunci dan distribusi data sensitif. )
 ---
 
 ## 3. Alat dan Bahan
 (- Python 3.x  
-- Visual Studio Code / editor lain  
+- Visual Studio Code  
 - Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
+- Library secretsharing  )
 
 ---
 
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
-
+1. Membuat folder praktikum/week11-secret-sharing/ beserta subfolder src, screenshots, dan file laporan.md.
+2. Menginstal library secretsharing menggunakan perintah pip install secretsharing.
+3. Membuat file secret_sharing.py di dalam folder src.
+4. Menuliskan kode program untuk membagi dan merekonstruksi rahasia.
+5. Menjalankan program dengan perintah python secret_sharing.py.
+6. Mengambil screenshot hasil pembagian dan rekonstruksi rahasia.
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
+
 
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
+from secretsharing import SecretSharer
+
+# Rahasia yang akan dibagi
+secret = "KriptografiUPB2025"
+
+# Membagi rahasia menjadi 5 share dengan threshold 3
+shares = SecretSharer.split_secret(secret, 3, 5)
+print("Shares:")
+for share in shares:
+    print(share)
+
+# Rekonstruksi rahasia dari 3 share
+recovered_secret = SecretSharer.recover_secret(shares[:3])
+print("Recovered Secret:", recovered_secret)
+
 
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
-
-Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+![Hasil Eksekusi](screenshots/hasil.png)
 
 ---
 
