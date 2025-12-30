@@ -87,7 +87,7 @@ Berdasarkan uraian dan percobaan Diffie–Hellman, dapat disimpulkan bahwa proto
 ## 10. Commit Log
 ```
 week7-diffie-hellman
-Author: Nafis Ramadhan Khoeru Jati <nafisramadhankhoerujati@gmail.com>
+Author: faiz-almubarok <huahuh3@gmail.com>
 Date:   2025-11-18
 
     wweek7-diffie-hellman Key Change
