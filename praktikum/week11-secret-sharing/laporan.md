@@ -57,8 +57,8 @@ for share in shares:
 # Rekonstruksi rahasia dari 3 share
 recovered_secret = SecretSharer.recover_secret(shares[:3])
 print("Recovered Secret:", recovered_secret)
-
-
+---
+)
 ---
 
 ## 6. Hasil dan Pembahasan
@@ -68,21 +68,22 @@ print("Recovered Secret:", recovered_secret)
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
+- Pertanyaan 1: Keuntungan utama Shamir Secret Sharing adalah peningkatan keamanan, karena rahasia tidak pernah disimpan atau dibagikan secara utuh. Jika satu atau beberapa share bocor, rahasia tetap aman selama jumlah share belum mencapai threshold.
+- Pertanyaan 2: hreshold (k) menentukan jumlah minimum share yang dibutuhkan untuk merekonstruksi rahasia. Semakin besar nilai k, semakin tinggi tingkat keamanannya, tetapi juga mengurangi fleksibilitas dalam proses pemulihan rahasia.
+-Pertanyaan 3: Shamir Secret Sharing banyak digunakan dalam manajemen kunci cryptocurrency, di mana kunci privat dompet dibagi ke beberapa pihak agar tidak ada satu pihak pun yang memegang kendali penuh.  
 )
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+(Shamir’s Secret Sharing merupakan metode yang aman dan efektif untuk mendistribusikan rahasia.  )
 
 ---
 
 ## 9. Daftar Pustaka
 (Cantumkan referensi yang digunakan.  
 Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
+- Shamir, A. (1979). How to Share a Secret. Communications of the ACM.
+- Stinson, D. R. (2019). Cryptography: Theory and Practice.  )
 
 ---
 
@@ -91,8 +92,8 @@ Contoh:
 Contoh:
 ```
 commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+Author: Faiz Al Mubarok <huahuh3@gmail.com>
+Date:   2025-12-30
 
     week2-cryptosystem: implementasi Caesar Cipher dan laporan )
 ```
