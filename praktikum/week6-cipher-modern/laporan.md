@@ -3,7 +3,7 @@ Minggu ke-: 6
 Topik: Cipher Modern (DES, AES, RSA)
 Nama: Faiz Al Mubarok
 NIM: 230202748
-Kelas: 230202769
+Kelas: 5IKRB
 
 ---
 
