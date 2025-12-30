@@ -45,21 +45,23 @@ Contoh format:
 ```python
 from secretsharing import SecretSharer
 
-# Rahasia yang akan dibagi
-secret = "KriptografiUPB2025"
+secret = "KRIPUPB2025"
 
-# Membagi rahasia menjadi 5 share dengan threshold 3
-shares = SecretSharer.split_secret(secret, 3, 5)
-print("Shares:")
-for share in shares:
-    print(share)
+secret_hex = secret.encode().hex()
 
-# Rekonstruksi rahasia dari 3 share
-recovered_secret = SecretSharer.recover_secret(shares[:3])
-print("Recovered Secret:", recovered_secret)
----
+shares = SecretSharer.split_secret(secret_hex, 3, 5)
+print("Shares:", shares)
+
+recovered_hex = SecretSharer.recover_secret(shares[:3])
+recovered = bytes.fromhex(recovered_hex).decode()
+
+print("Recovered secret:", recovered)
+
+```
 )
+
 ---
+
 
 ## 6. Hasil dan Pembahasan
 ![Hasil Eksekusi](screenshots/hasil.png)
